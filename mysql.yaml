@@ -1,0 +1,18 @@
+services:
+  mysql001:
+    image: "mysql:8.0"
+    volumes:
+      - ./mysql001/data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+    #ports:
+    #  - "13306:3306"
+
+  mysql002:
+    image: "mysql:8.0"
+    volumes:
+      - ./mysql002/data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+    #ports:
+    #  - "23306:3306"
