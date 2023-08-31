@@ -3,6 +3,7 @@ services:
     image: "mysql:8.0"
     volumes:
       - ./mysql001/data:/var/lib/mysql
+      - ./mysql001/my.cnf:/etc/my.cnf
     environment:
       - MYSQL_ROOT_PASSWORD=123456
     #ports:
@@ -12,6 +13,7 @@ services:
     image: "mysql:8.0"
     volumes:
       - ./mysql002/data:/var/lib/mysql
+      - ./mysql002/my.cnf:/etc/my.cnf
     environment:
       - MYSQL_ROOT_PASSWORD=123456
     #ports:
