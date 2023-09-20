@@ -8,6 +8,7 @@ services:
       - ./mysql001/my.cnf:/etc/my.cnf
     environment:
       - MYSQL_ROOT_PASSWORD=123456
+      - TZ=Asia/Shanghai
 
   mysql002:
     image: "mysql:8.0"
@@ -16,5 +17,6 @@ services:
       - ./mysql002/my.cnf:/etc/my.cnf
     environment:
       - MYSQL_ROOT_PASSWORD=123456
+      - TZ=Asia/Shanghai
     ports:
       - "23306:3306"
