@@ -245,3 +245,5 @@ docs/dev
 *.zip
 data
 test
+alpine_base/glibc
+*.tar.gz
