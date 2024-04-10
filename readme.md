@@ -19,7 +19,7 @@ sudo docker compose -f mysql.yaml up -d
 sudo docker exec -it container_id /bin/bash
 ```
 ---
-gtid replica
+## gtid replica
 ```bash
 change replication source to source_host='172.18.0.3', source_port=3306,source_user='repl',source_password='repl',source_auto_position=1;
 ```
